@@ -1,6 +1,7 @@
 ﻿
 using CityMakerspace.Views;
 using InventoryManagement.Controllers;
+using InventoryManagement.Data;
 using InventoryManagement.Models;
 using InventoryManagement.Views;
 using System;
@@ -14,6 +15,18 @@ class Program
 
     static void Main()
     {
+        try
+        {
+            using (var conn = Db.GetConnection())
+            {
+                Console.WriteLine("✅ Connection successful!");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("❌ Connection failed: " + ex.Message);
+        }
+
         while (true)
         {
             AuthView.ShowWelcome();
