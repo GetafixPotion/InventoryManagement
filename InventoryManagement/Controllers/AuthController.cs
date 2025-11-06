@@ -35,7 +35,7 @@ namespace InventoryManagement.Controllers
             var exists = Db.ExecuteScalar("SELECT COUNT(1) FROM Members WHERE Username=@u", new SqlParameter("@u", username));
             if (Convert.ToInt32(exists) > 0) return false;
             var hash = Util.HashPassword(password);
-            Db.ExecuteNonQuery("INSERT INTO Members (Username, PasswordHash, Role) VALUES (@u,@h,@r)",
+            Db.ExecuteNonQuery("INSERT INTO Members (Username, Password, Role) VALUES (@u,@h,@r)",
                 new SqlParameter("@u", username),
                 new SqlParameter("@h", hash),
                 new SqlParameter("@r", role));

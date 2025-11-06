@@ -4,4 +4,4 @@ This is just a simple C# console app for managing a few tools(follows a MVC patt
 1. For adimin to CRUD tools
 2. For users to loan some tools
 
-packages installed: System.Data.SqlClient and Microsoft.Data.Sql only refernced first one
+packages installed: System.Data.SqlClient 
