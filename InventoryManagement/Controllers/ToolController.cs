@@ -1,9 +1,8 @@
-﻿using InventoryManagement.Data;
-using InventoryManagement.Models;
-
-using System.Collections.Generic;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
+using InventoryManagement.Data;
+using InventoryManagement.Models;
+using System.Collections.Generic;
 
 namespace InventoryManagement.Controllers
 {

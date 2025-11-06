@@ -4,6 +4,8 @@ using InventoryManagement.Models;
 using InventoryManagement.Data;
 using System.Data.SqlClient;
 
+
+
 namespace InventoryManagement.Controllers
 {
     public class AuthController
