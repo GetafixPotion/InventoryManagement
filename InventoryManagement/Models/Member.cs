@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace InventoryManagement.Models
 {
-    internal class Member
+    public class Member
     {
+        public int MemberId { get; set; }
+        public string Username { get; set; }
+        public string PasswordHash { get; set; }
+        public string Role { get; set; }
     }
 }

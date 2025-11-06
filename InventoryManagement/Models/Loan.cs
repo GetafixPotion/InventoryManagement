@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace InventoryManagement.Models
 {
-    internal class Loan
+    public class Loan
     {
+        public int LoanId { get; set; }
+        public int MemberId { get; set; }
+        public int ToolId { get; set; }
+        public DateTime BorrowDate { get; set; }
+        public DateTime? ReturnDate { get; set; }
     }
 }
