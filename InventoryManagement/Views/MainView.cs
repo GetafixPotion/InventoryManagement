@@ -1,12 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using InventoryManagement.Models;
+using System;
 
-namespace InventoryManagement.Views
+namespace CityMakerspace.Views
 {
-    internal class MainView
+    public static class MainView
     {
+        public static void ShowMemberMenu(Member m)
+        {
+            Console.Clear();
+            Console.WriteLine($"Welcome {m.Username} ({m.Role})\n");
+            Console.WriteLine("1. View Tools");
+            Console.WriteLine("2. My Loans");
+            Console.WriteLine("3. Borrow Tool");
+            Console.WriteLine("4. Return Tool");
+            Console.WriteLine("5. Logout");
+            Console.Write("Choose: ");
+        }
+
+        public static void ShowAdminMenu(Member m)
+        {
+            Console.Clear();
+            Console.WriteLine($"Welcome {m.Username} ({m.Role})\n");
+            Console.WriteLine("1. View Tools");
+            Console.WriteLine("2. Manage Tools (Create/Update/Delete)");
+            Console.WriteLine("3. View All Loans");
+            Console.WriteLine("4. Logout");
+            Console.Write("Choose: ");
+        }
     }
 }
+
