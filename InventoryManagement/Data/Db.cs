@@ -10,7 +10,7 @@ namespace InventoryManagement.Data
 {
     public static class Db
     {
-        public static string ConnectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ToolLibraryDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
+        public static string ConnectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ToolLibraryDB;Integrated Security=True;";
         public static SqlConnection GetConnection()
         {
             var conn = new SqlConnection(ConnectionString);
